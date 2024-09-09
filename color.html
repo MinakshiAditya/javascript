@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="demo">
+    <input type ="text" placeholder="enter your color" onkeydown="document.getElementById('demo').style.backgroundColor=this.value">
+    <button id="demo1" onclick="color1()">red</button>
+    <button id="demo2" onclick="color2()">black</button>
+    <button id="demo3" onclick="color3()">blue</button>
+    <button id="demo4" onclick="color4()">purple</button>
+    <button id="demo5" onclick="color5()">yellow</button>
+</body>
+<script>
+    let target = document.getElementById('demo')
+    function color1(){
+        target.style.backgroundColor = "red"
+    }
+    function color2(){
+        target.style.backgroundColor = "black"
+    }
+    function color3(){
+        target.style.backgroundColor = "blue"
+    }
+    function color4(){
+        target.style.backgroundColor = "purple"
+    }
+    function color5(){
+        target.style.backgroundColor = "yellow"
+    }
+</script>
+</html>
